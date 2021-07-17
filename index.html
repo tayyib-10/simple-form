@@ -14,16 +14,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="welcome()">
   <!-- Project -->
   <div id="label">
     <h3 id="sign-in">Sign In</h3>
     <hr id="divider"/>
   </div>
   <div id="content">
-    <form class="form">
-      <input type="text" class="input input-text" required placeholder="Type Your Name..."/>
-      <input type="password" class="input input-password" required placeholder="Your password ***"/>
+    <form class="form" onsubmit="validate(event)">
+      <input type="text" class="input input-text" required placeholder="Type Your Name..." name="Name"/>
+      <input type="password" class="input input-password" required placeholder="Your password ***" name="Password"/>
       <button type="submit" class="sign-in-button" onsubmit="">Sign In</button>
     </form>
   </div>
