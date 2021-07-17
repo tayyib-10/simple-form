@@ -2,6 +2,7 @@ body {
   background-color: #00FF9B;
   margin: 0;
   padding: 0;
+  scrollbar-color: #00FF9B;
 }
 
 #content {
